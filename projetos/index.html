@@ -15,7 +15,7 @@
 			let jqueryParams=[],jQuery=function(r){return jqueryParams=[...jqueryParams,r],jQuery},$=function(r){return jqueryParams=[...jqueryParams,r],$};window.jQuery=jQuery,window.$=jQuery;let customHeadScripts=!1;jQuery.fn=jQuery.prototype={},$.fn=jQuery.prototype={},jQuery.noConflict=function(r){if(window.jQuery)return jQuery=window.jQuery,$=window.jQuery,customHeadScripts=!0,jQuery.noConflict},jQuery.ready=function(r){jqueryParams=[...jqueryParams,r]},$.ready=function(r){jqueryParams=[...jqueryParams,r]},jQuery.load=function(r){jqueryParams=[...jqueryParams,r]},$.load=function(r){jqueryParams=[...jqueryParams,r]},jQuery.fn.ready=function(r){jqueryParams=[...jqueryParams,r]},$.fn.ready=function(r){jqueryParams=[...jqueryParams,r]};</script>
 
 <title>Projetos &ndash; Natália Faria</title>
-<link rel="canonical" href="index.html" />
+<link rel="canonical" href="https://nataliafaria.arq.br/" />
 <meta property="og:locale" content="pt_BR" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Projetos &ndash; Natália Faria" />
@@ -362,7 +362,15 @@ body
 </div>
 </div><div class="et_pb_column et_pb_column_1_4 et_pb_column_1    et_pb_css_mix_blend_mode_passthrough">
 <div class="et_pb_module et_pb_sidebar_0 et_pb_widget_area clearfix et_pb_widget_area_left et_pb_bg_layout_light">
-<div id="search-3" class="et_pb_widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://www.google.com/search">
+<div id="search-3" class="et_pb_widget widget_search"><form target="_blank" role="search" method="get" id="searchform" class="searchform" action="https://www.google.com/search">
+	<script type="text/javascript">
+		var formulario = document.getElementById('searchform');
+		formulario.onsubmit = function(){
+			var pesquisa = document.getElementById('s').value;
+			document.getElementById('s').value = 'site:nataliafaria.arq.br ' + pesquisa;
+			formulario.submit();
+		};
+	</script>	
 <div>
 <label class="screen-reader-text" for="s">Pesquisar por:</label>
 <input type="text" value="" name="q" id="s" />
