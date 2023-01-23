@@ -1,0 +1,48 @@
+#instagram .break {
+    clear:both; 
+}
+#instagram .break p {
+    clear:both; 
+    vertical-align: middle;
+    display:table-cell;
+    height: 92px;
+}
+#instagram picture {
+    position: relative;
+    float: left;
+    border-radius: 50%;
+    border:2px solid #DCA57D;
+    clear:both;
+    margin:0 12px 12px 0;
+}
+#instagram picture img {
+    display: block;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+    border: 2px solid black;
+}
+#instagram .post {
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    margin: auto 6px;
+    display:inline-block;
+}
+#instagram .post img {
+    width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 768px) {
+    #instagram .post { 
+        width: 100%; height:300px; 
+        margin: 6px auto; 
+        display: none;
+    }
+    #instagram .post:first-child { display: block; }
+    #instagram picture { 
+        margin-bottom:12px;
+    }
+}
